@@ -150,28 +150,31 @@ FROM   payers;
 SELECT pro.code        AS CODE,
        pro.description AS TERM
 FROM   procedures AS pro
+WHERE  NOT pro.code = ""
 UNION
 SELECT pro.reasoncode        AS CODE,
        pro.reasondescription AS TERM
 FROM   procedures AS pro
+WHERE  NOT pro.reasoncode = ""
 UNION
 SELECT enc.reasoncode        AS CODE,
        enc.reasondescription AS TERM
 FROM   encounters AS enc
+WHERE  NOT enc.reasoncode = ""
 UNION
 SELECT med.reasoncode        AS CODE,
        med.reasondescription AS TERM
 FROM   medications AS med
+WHERE  NOT med.reasoncode = ""
 UNION
 SELECT con.code        AS CODE,
        con.description AS TERM
 FROM   conditions AS con
-ORDER  BY code;
+WHERE  NOT con.code = "";
 
 -- table "D_rxnorm"
 -- create table from codes + descriptions in source database tables
 -- would be created directly from RXNorm for a proper data warehouse
-SELECT DISTINCT( med.code )    AS CODE,
-               med.description AS NAME
-FROM   medications AS med
-ORDER  BY code;
+SELECT DISTINCT(code)    AS CODE,
+       description       AS NAME
+FROM   medications;
