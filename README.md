@@ -37,8 +37,7 @@ Im Projekt wurden die Aufgaben folgendermaßen durchgeführt:
 
 Während der gesamten Projektdurchfürung wurden unterscheidliche Kriterien der Datenqualität (TODO: Link einfügen, wenn Wiki-Page exisitert) geprüft. Um den echten Umgang mit Patientendaten zu simulieren, wurden Risiken im Umgang mit den uns zu verfügung gestellten Daten bewertet und Gegenmaßnahmen geprüft. Sie können in der [Datenschutzfolgenabschätzung](https://github.com/Fuenfgeld/DMA2023TeamA/wiki/Datenschutz-Folgenabsch%C3%A4tzung) eingesehen werden. 
 
-(TODO: Bild vom Projektverlauf einfügen)
-
+![Readme_Figure](https://github.com/Fuenfgeld/DMA2023TeamA/tree/main/Dokumentation/Readme_Figure.png)
 
 ## Analysenergebnisse
 TODO: Analysenergebnisse einfügen, kurz 1-2 Sätze darüber verlieren. 
