@@ -3,7 +3,8 @@
 -- table "F_encounter_costs"
 CREATE TABLE IF NOT EXISTS F_encounter_costs
              (
-                Id                      VARCHAR PRIMARY KEY,
+                Id                      INTEGER AUTO_INCREMENT PRIMARY KEY,
+                ENC_ID                  VARCHAR,
                 ENC_START               DATETIME,
                 ENC_STOP                DATETIME,
                 PATIENT                 VARCHAR,
@@ -92,7 +93,8 @@ CREATE TABLE IF NOT EXISTS D_rxnorm
 -- join with procedures (left join on encounter id to preserve all encounters, even without procedures), selecting required columns
 -- next join with medications (left join on encounter id to preserve all encounters, even without medications), selecting required columns
 -- next join with conditions (left join on encounter id to preserve all encounters, even without conditions), selecting required columns
-SELECT enc.id                  AS Id,
+SELECT row_number() over(order by enc.id) as ID
+       enc.id                  AS ENC_ID,
        enc.start               AS ENC_START,
        enc.stop                AS ENC_STOP,
        enc.patient             AS PATIENT,
@@ -123,8 +125,7 @@ FROM   encounters AS enc
        LEFT JOIN medications AS med
               ON enc.id = med.encounter
        LEFT JOIN conditions AS con
-              ON enc.id = con.encounter
-ORDER  BY enc.id;
+              ON enc.id = con.encounter;
 
 -- table "D_patients"
 SELECT id,
