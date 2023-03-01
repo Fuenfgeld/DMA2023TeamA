@@ -60,18 +60,4 @@ Um den Prozess durchlaufen zu könnnen, müssen Sie die Notebooks in folgender R
 2. [ETL_Process.ipynb](https://github.com/Fuenfgeld/DMA2023TeamA/blob/main/Code/ETL_Process.ipynb)
 3. [Data_Analysis.ipynb](https://github.com/Fuenfgeld/DMA2023TeamA/blob/main/Code/Data_Analysis.ipynb)
 
-Bitte führen Sie die Codeblöcke in den jeweiligen Notebooks am Stück aus (In Google Colab: Laufzeit -> Alle ausführen (Standard-Tastenbelegung Strg + F9)). Ausnahme: zu Beginn der Datenanalyse muss zunächst die verwendete Version von Matplotlib aktualsiert und dann die Runtime neu gestartet werden. 
-
-### Lokale Ausführung auf Ihrem Endgerät
-
-Folgen Sie bitte diesen Schritten, wenn Sie die Projektdurchführung lokal auf Ihrem Rechner nachvollziehen möchten: 
-
-1. Sie benötigen eine Installation von Python auf Ihrem Endgerät. Damit die Funktionalität der Skripte sichergestellt ist, sollten Sie mindestens die [Python-Version 3.8.10](https://www.python.org/downloads/release/python-3810/) verwenden, da das Projekt mit dieser durchgeführt wurde. Informationen, wie Python installiert wird, finden Sie [hier](https://realpython.com/installing-python/). 
-2. Wenn Sie Python installiert haben, folgen Sie der [Installationsanleitung](https://jupyter.org/install) für Jupyter Notebooks und installieren Sie Jupyter Notebooks. 
-3. Klonen Sie das Repository dieses Projektes auf Ihren Computer.  
-4. Stellen Sie sicher, dass alle für das Projekt notwendigen Python-Libraries installiert sind (siehe [Systemumgebung](https://github.com/Fuenfgeld/DMA2023TeamA/wiki/Systemumgebung))
-5. Öfnnen Sie Jupyter Notebooks (Konsole: jupyter notebook)
-6. Führen Sie die Notebooks in der folgenden Reihenfolge aus:
-* [Setup_and_fill_Database.ipynb](https://github.com/Fuenfgeld/DMA2023TeamA/blob/main/Code/Setup_and_fill_Database.ipynb)
-* [ETL_Process.ipynb](https://github.com/Fuenfgeld/DMA2023TeamA/blob/main/Code/ETL_Process.ipynb)
-* [Data_Analysis.ipynb](https://github.com/Fuenfgeld/DMA2023TeamA/blob/main/Code/Data_Analysis.ipynb)
+Bitte führen Sie die Codeblöcke in den jeweiligen Notebooks am Stück aus (In Google Colab: Laufzeit -> Alle ausführen (Standard-Tastenbelegung Strg + F9)). Ausnahme: zu Beginn der Datenanalyse muss zunächst die verwendete Version von Matplotlib aktualisiert und dann die Runtime neu gestartet werden. 
